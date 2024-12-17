@@ -32,11 +32,11 @@ function update2(){
     //
     let billEach = contaTotal / quantidadePessoas
 
-    document.getElementById('tipPercent').innerHTML = percentualGorjeta + ' %'
-    document.getElementById('tipValue').innerHTML = 'R$ ' + calculoPercentualDaGorjeta
-    document.getElementById('totalWithTip').innerHTML = 'R$ ' + contaTotal
+    document.getElementById('tipPercent').innerHTML = ' ' + percentualGorjeta + '%'
+    document.getElementById('tipValue').innerHTML = 'R$ ' + calculoPercentualDaGorjeta.toFixed(2)
+    document.getElementById('totalWithTip').innerHTML = 'R$ ' + contaTotal.toFixed(2)
     document.getElementById('splitValue').innerHTML = quantidadePessoas
-    document.getElementById('billEach').innerHTML = 'R$ ' + contaTotal / quantidadePessoas
+    document.getElementById('billEach').innerHTML = 'R$ ' + (contaTotal / quantidadePessoas).toFixed(2)
 }
 
 
